@@ -6,19 +6,18 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:       Type
-email:       ''
-description: ''
-baseurl:     '' # The subpath of your site, e.g. /blog
-url:         'https://kimbongjun.github.io/' # The base hostname & protocol for your site
-twitter:     ''
-github:      ''
-instagram:   ''
-facebook:    ''
-
-markdown:  kramdown
+title: 봉쥬루
+email: ""
+description: ""
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "https://kimbongjun.github.io/" # The base hostname & protocol for your site
+github: "https://github.com/kimbongjun"
+instagram: "https://www.instagram.com/kimbongjour/"
+facebook: "https://www.facebook.com/mbongjun"
+comments: true
+markdown: kramdown
 permalink: pretty
-paginate:  10
+paginate: 10
 
 sass:
   style: compressed
@@ -35,10 +34,13 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+# Category
+category_dir: category/
+
 # Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: pretty
 
 # Pages path
 defaults:

@@ -12,11 +12,10 @@ layout: default
 
   <div class='o-grid'>
     <div class='o-grid__col'>
-      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting' style="margin-bottom: 1rem;">
 
-        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
-
-        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
+        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>       
+        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
 
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
@@ -28,10 +27,9 @@ layout: default
           {% for tag in page.tags %}
             <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
           {% endfor %}
-        </div>
-
+        </div>           
       </article>
-
+      {% include disqus.html %}
     </div>
   </div>
 </div>

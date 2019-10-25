@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="o-wrapper">
+  {% assign category = page.category | default: page.title %} {% for post in
+  site.categories[category] %}
+  <div class="o-grid">
+    {% include post-card.liquid %}
+  </div>
+  {% endfor %}
+</div>
