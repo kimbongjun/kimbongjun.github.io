@@ -7,24 +7,23 @@
     {% endif %}
   {% endunless %}
 {% endfor %} -->
-  <div class="sidebar-nav-item">Category</div>
-  <nav class="content-ul">    
-    <ul class="c-nav o-plain-list">
+<!-- <div class="sidebar-nav-item">Category</div> -->
+<nav class="content-ul">
+  <ul class="c-nav o-plain-list">
     {% for category in site.categories %}
-     <li class='c-nav__item' role='presentation'>
-    <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
-       class='c-nav__link'>
-                          <span class="name">                            
-                             {{category|first}}
-                          </span>
-      <span class="badge">{{ category | last | size }}</span>
-    </a>
+    <li class='c-nav__item' role='presentation'>
+      <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}" class='c-nav__link'>
+        <span class="name">
+          {{category|first}}
+        </span>
+        <span class="badge">{{ category | last | size }}</span>
+      </a>
     </li>
     {% endfor %}
-    </ul>
-  </nav>
+  </ul>
+</nav>
 
-  <div class="sidebar-nav-item">Tags</div>
+<!-- <div class="sidebar-nav-item">Tags</div>
   <div class="tags-cloud">
     <div>
       {% assign first = site.tags.first %}
@@ -63,4 +62,4 @@
       <a href="{{ root_url }}/{{ site.tag_page_dir }}/{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ 9 | minus: color }}{{ 9 | minus: color }}{{ 9 | minus: color }};">{{ tag[0] }}</a>
       {% endfor %}
     </div>
-  </div>
+  </div> -->
