@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Type: Minimal and Clean Free Jekyll Theme
 
 <img alt="Type: Minimal and Clean Free Jekyll Theme" src="https://user-images.githubusercontent.com/626005/63093493-c3daa880-bf65-11e9-860e-da88047cce24.png">
@@ -211,3 +212,6 @@ You can find the current favicon (favicon.ico) inside the theme root directory, 
 👉 Visit [**aspirethemes.com**](http://bit.ly/type-jekyll-github-link) for more Jekyll, Ghost, and WordPress themes.
 
 <img alt="Aspire Themes" src="https://user-images.githubusercontent.com/626005/63092640-afe17780-bf62-11e9-9ea9-546489bb282c.png">
+=======
+# kimbongjun.github.io
+>>>>>>> 378240eb48a04aab18e66fd4a8170ccd846dc734
