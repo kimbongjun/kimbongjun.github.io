@@ -3,7 +3,7 @@
   <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
     <h3 class='c-post-card__title'>{{ post.title }}</h3>
   
-    <p class='c-post-card__excerpt u-font-medium'>
+    <p class='c-post-card__excerpt'>
       {{ post.content | strip_html | truncatewords:35 }}
     </p>
 
