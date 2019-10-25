@@ -24,7 +24,7 @@
     transition: $global-transition;
 
     @include mq($from: tablet) {
-      font-size: double($font-size-small);
+      font-size: 20px;
     }
   }
 
