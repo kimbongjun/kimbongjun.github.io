@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Front-End
-category: front-end
+title: Web
+category: web
 ---

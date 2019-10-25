@@ -1,0 +1,15 @@
+.badge {
+  &:before {
+    content: "(";
+  }
+
+  &:after {
+    content: ")";
+  }
+}
+
+.name {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
