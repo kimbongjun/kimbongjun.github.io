@@ -10,7 +10,7 @@ code {
 
 pre {
   overflow: auto;
-  padding: double($base-spacing-unit);
+  padding: 1rem 0;
   margin-bottom: $base-spacing-unit;
   font-size: $font-size-medium;
   line-height: $line-height-medium;
@@ -19,4 +19,6 @@ pre {
 }
 
 li code,
-p code { padding: quarter($base-spacing-unit) half($base-spacing-unit); }
+p code {
+  padding: quarter($base-spacing-unit) half($base-spacing-unit);
+}
