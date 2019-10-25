@@ -15,13 +15,13 @@ layout: default
       <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting' style="margin-bottom: 1rem;">
 
         <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
+        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}'
+          itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
         <div class='c-categories'>
           {% for cat in page.categories %}
           <a href='{{ site.baseurl }}/category/{{ cat }}'>#{{ cat }}</a>
           {% endfor %}
         </div>
-        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}'
-          itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
 
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
