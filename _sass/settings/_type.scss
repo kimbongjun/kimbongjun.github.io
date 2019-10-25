@@ -14,8 +14,7 @@ sans-serif,
 'Apple Color Emoji',
 'Segoe UI Emoji',
 'Segoe UI Symbol';
-$font-monospace: Courier,
-monospace;
+$font-monospace: $font-base;
 
 $font-size-base: 19px;
 $font-size-medium: 16px;
