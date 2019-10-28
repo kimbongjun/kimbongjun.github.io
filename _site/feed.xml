@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>봉쥬루</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 28 Oct 2019 16:26:15 +0900</pubDate>
+    <lastBuildDate>Mon, 28 Oct 2019 16:26:15 +0900</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+
+    
+      <item>
+        <title>마크다운</title>
+        <description>&lt;h4 id=&quot;마크다운&quot;&gt;마크다운?&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; 마크업 언어의 일종. 일반 텍스트 문서의 양식을 편집하는 문법.&lt;/p&gt;
+
+&lt;h5 id=&quot;--강조&quot;&gt;- 강조&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;이텔릭체는 &lt;span class=&quot;ge&quot;&gt;*별표(asterisks)*&lt;/span&gt; 혹은 _언더바(underscore)_를 사용  
+두껍게는 &lt;span class=&quot;gs&quot;&gt;**별표(asterisks)**&lt;/span&gt; 혹은 __언더바(underscore)__를 사용  
+&lt;span class=&quot;gs&quot;&gt;**_이텔릭체_와 두껍게**&lt;/span&gt;를 같이 사용  
+취소선은 ~~물결표시(tilde)~~를 사용  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;u&amp;gt;&lt;/span&gt;밑줄&lt;span class=&quot;nt&quot;&gt;&amp;lt;/u&amp;gt;&lt;/span&gt;은 &lt;span class=&quot;sb&quot;&gt;`&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;`&lt;/span&gt;를 사용  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;--리스트&quot;&gt;- 리스트&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서가 필요한 목록
+&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서가 필요한 목록
+&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; 순서가 필요하지 않은 목록(서브) 
+&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; 순서가 필요하지 않은 목록(서브) 
+&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서가 필요한 목록
+&lt;span class=&quot;p&quot;&gt;  1.&lt;/span&gt; 순서가 필요한 목록(서브)
+&lt;span class=&quot;p&quot;&gt;  1.&lt;/span&gt; 순서가 필요한 목록(서브)
+&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; 순서가 필요한 목록
+&lt;span class=&quot;p&quot;&gt;
+-&lt;/span&gt; 순서가 필요하지 않은 목록에 사용 가능한 기호
+&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; 대쉬(hyphen)
+&lt;span class=&quot;p&quot;&gt;  *&lt;/span&gt; 별표(asterisks)
+&lt;span class=&quot;p&quot;&gt;  +&lt;/span&gt; 더하기(plus sign)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;--링크&quot;&gt;- 링크&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;NAVER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://naver.com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;NAVER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://naver.com&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;Title Attritube&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;NAVER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://naver.com&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;Title Attritube&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{:target=&quot;_타겟종류&quot;}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;--이미지&quot;&gt;- 이미지&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alt태그&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;이미지경로 &quot;링크 Title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+※ figcaption용 커스텀 (CSS 요구 됨)
+&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alt태그&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;이미지경로 &quot;링크 Title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;ge&quot;&gt;*figcaption 내용*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;--수평선&quot;&gt;- 수평선&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;p&quot;&gt;* * *
+***
+*****&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;- - -
+---------------------------------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Mon, 28 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/web/2019/10/28/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</link>
+        <guid isPermaLink="true">http://localhost:4000/web/2019/10/28/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/</guid>
+      </item>
+    
+      <item>
+        <title>일상 - 브실부심</title>
+        <description>&lt;h4 id=&quot;점심&quot;&gt;점심&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;우진가 더 챔버스&lt;/code&gt; - 서울 강남구 테헤란로27길 28&lt;/p&gt;
+
+&lt;p&gt;점심시간. 길거리에 바글거리는 강남 피플이 쳐다도 안 보는 그 곳&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;한우 우거지국밥 반상&lt;/code&gt;을 제외하면 눈살 찌푸려지는 가격이다.&lt;/p&gt;
+
+&lt;h4 id=&quot;시놀로지-nas&quot;&gt;시놀로지 NAS&lt;/h4&gt;
+
+&lt;p&gt;이직 후 낯선 무료함에 적응하지 못하다 할 일을 찾게 되었다.&lt;br /&gt;
+괜히 찾았다…&lt;/p&gt;
+
+&lt;h4 id=&quot;전투민족&quot;&gt;전투민족&lt;/h4&gt;
+
+&lt;p&gt;예부터 침략에 맞서 싸우고 항전하던 호전적인 자의식이 &lt;code class=&quot;highlighter-rouge&quot;&gt;유독&lt;/code&gt; 배출되는 그 곳&lt;br /&gt;
+오늘도 평화로운 &lt;code class=&quot;highlighter-rouge&quot;&gt;협곡&lt;/code&gt;에서 내가 아직 살아있음을 느낀다.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/daily/2019/10/25/%EC%98%A4%EB%8A%98%EC%9D%98-%EB%8B%A8%EC%83%81/</link>
+        <guid isPermaLink="true">http://localhost:4000/daily/2019/10/25/%EC%98%A4%EB%8A%98%EC%9D%98-%EB%8B%A8%EC%83%81/</guid>
+      </item>
+    
+      <item>
+        <title>Git 브랜치 관련</title>
+        <description>&lt;h4 id=&quot;리모트-브랜치-참조&quot;&gt;리모트 브랜치 참조&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; 또는 &lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch&lt;/code&gt; 명령을 실행하면 Git은 로컬 저장소에서 리모트 브랜치에 대한 참조를 만든다. 
+하지만 간혹 리모트 브랜치에 삭제된 브랜치를 로컬에서 여전히 참조하는 경우가 있다.&lt;/p&gt;
+
+&lt;h4 id=&quot;리모트-브랜치-상태보기&quot;&gt;리모트 브랜치 상태보기&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote show origin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;리모트-브랜치-참조-업데이트&quot;&gt;리모트 브랜치 참조 업데이트&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote prune
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote prune&lt;/code&gt;은 리모트 브랜치의 더 이상 유효하지 않은 참조를 깨끗이 지우는 명령어 이다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch -p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch -p&lt;/code&gt; 명령어는 로컬 저장소를 최신 정보로 갱신(리모트 저장소와 동기화)하며 자동적으로 더이상 유효하지 않은 참조를 제거한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mylko72.gitbooks.io/git/content/remote/remote_update.html&quot; target=&quot;_blank&quot;&gt;※ 참고&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/web/2019/10/25/git%EB%B8%8C%EB%9E%9C%EB%93%9C%EA%B4%80%EB%A0%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/web/2019/10/25/git%EB%B8%8C%EB%9E%9C%EB%93%9C%EA%B4%80%EB%A0%A8/</guid>
+      </item>
+    
+      <item>
+        <title>일상 - 지옥철</title>
+        <description>&lt;h4 id=&quot;출근&quot;&gt;출근&lt;/h4&gt;
+
+&lt;p&gt;지하철 승차 후 풍겨오는 냄새는 가히 &lt;code class=&quot;highlighter-rouge&quot;&gt;역겨웠다.&lt;/code&gt;&lt;br /&gt;
+세월의 모진 풍파를 겪은 남성의 페로몬 향은 내 코가 감당하기 힘들 정도였다.&lt;/p&gt;
+
+&lt;h4 id=&quot;엘리베이터&quot;&gt;엘리베이터&lt;/h4&gt;
+
+&lt;p&gt;요즘 엘베에서 자주 마주치는 직원이 있다.&lt;br /&gt;
+코스메틱 사업부 영업 파트에서 일하는 그 분은 대략 34~35살 쯤으로 예상된다.&lt;br /&gt;
+인상이 좋으시다.&lt;/p&gt;
+
+&lt;h4 id=&quot;점심&quot;&gt;점심&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;피키이터&lt;/code&gt; - 서울 강남구 테헤란로26길 14 B1&lt;/p&gt;
+
+&lt;p&gt;비합리적인 가격과 비양심적인 질량&lt;br /&gt;
+포만감 대신 불쾌감을 채웠다.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/daily/2019/10/24/%EC%98%A4%EB%8A%98%EC%9D%98-%EB%8B%A8%EC%83%81/</link>
+        <guid isPermaLink="true">http://localhost:4000/daily/2019/10/24/%EC%98%A4%EB%8A%98%EC%9D%98-%EB%8B%A8%EC%83%81/</guid>
+      </item>
+    
+      <item>
+        <title>여행 - 다낭</title>
+        <description>&lt;h4 id=&quot;출발&quot;&gt;출발&lt;/h4&gt;
+
+&lt;p&gt;군대 동기들과 처음 떠나는 해외여행.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/travel/2019/10/04/%EB%8B%A4%EB%82%AD%EC%97%AC%ED%96%89/</link>
+        <guid isPermaLink="true">http://localhost:4000/travel/2019/10/04/%EB%8B%A4%EB%82%AD%EC%97%AC%ED%96%89/</guid>
+      </item>
+    
+      <item>
+        <title>여행 - 태국, 싱가폴</title>
+        <description>&lt;h3 id=&quot;동기&quot;&gt;동기&lt;/h3&gt;
+
+&lt;p&gt;약 3년간 몸 담은 회사를 관두고 너무나 기분 좋은 나머지 동남아행 비행기표를 끊게 되었다.&lt;br /&gt;
+행선지는 역시 동남아.&lt;/p&gt;
+
+&lt;p&gt;동남아 특유의 우호적인 애티튜드와 본토에서 풍기는 중독적진 냄새때문에 여행을 계획하게 되면 동남아는 늘 1순위다.&lt;/p&gt;
+
+&lt;h3 id=&quot;8월-29일--8월-31일-방콕&quot;&gt;8월 29일 ~ 8월 31일 방콕&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/2018-bkk/bkk1.jpg&quot; alt=&quot;방콕 숙소&quot; title=&quot;에어비앤비, 1박에 약 2만원&quot; /&gt;&lt;em&gt;에어비앤비, 1박에 약 2만원&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;첫 날부터 전투적으로 빨빨거리고 싶었으나, 혼자 여행왔다는 두려움과 걱정이 공존하는 상태였던지라 등신같이 잠을 청했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/2018-bkk/20180830_105214.jpg&quot; alt=&quot;방콕 지하철1&quot; /&gt;&lt;img src=&quot;/images/posts/2018-bkk/20180830_111254.jpg&quot; alt=&quot;방콕 지하철2&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;--방콕-지하철-탐방&quot;&gt;- 방콕 지하철 탐방&lt;/h5&gt;
+&lt;p&gt;그냥 택시잡는게 낫다.&lt;br /&gt;
+더워죽겠는데 오르락내리락 땀 뻘뻘 흘리면서 기껏 전동차에 탑승하니 구역질 나는 각종 인종 냄새가 반겨줬다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/2018-bkk/20180830_122324.jpg&quot; alt=&quot;방콕 시암센터&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;--방콕-시암센터&quot;&gt;- 방콕 시암센터&lt;/h5&gt;
+&lt;p&gt;스타필드가 더 웅장하고 볼거리 가득했던거 같다.&lt;/p&gt;
+
+&lt;h5 id=&quot;--lets-relax&quot;&gt;- Let’s Relax&lt;/h5&gt;
+&lt;p&gt;시암센터에서 방문한 마사지 샵.&lt;br /&gt;
+직원분들이 친절하고 시설이 첨단적이다.&lt;br /&gt;
+가장 좋은 건 마사지 이후 제공되는 망고와 차.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/369112161&quot; width=&quot;100%&quot; height=&quot;auto&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;하필(?) 또 남자 직원이 세심하게 어루만져 주셔 가지고 노곤함을 해소할 수 있었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/2018-bkk/20180830_155201.jpg&quot; alt=&quot;방콕 카오산로드&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;--방콕-카오산-로드&quot;&gt;- 방콕 카오산 로드&lt;/h5&gt;
+&lt;p&gt;방콕 여행객이면 꼭 와야되는 카오산 로드는 개뿔&lt;br /&gt;
+밤이 되면 육중한 피지컬을 가진 코쟁이 형들이 술에 취한건지 약에 취한건지 길거리 점령 및 각종 남사스러운 자태를 뽐내는 거리.&lt;br /&gt;
+해피 풍선인가 한 번 경험해봤는데 늘 정신 나가 있는 나에겐 효과가 미미했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/2018-bkk/20180830_161104.jpg&quot; alt=&quot;카오산로드 나이쏘이&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;카오산로드 맛집이라는 나이쏘이.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;갈비국수&lt;/code&gt; 맛집이라는데 하필 내가 가니까 매진이네?&lt;/p&gt;
+
+&lt;h5 id=&quot;--huai-khwang-terrace&quot;&gt;- Huai khwang Terrace&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2018-bkk/20180830_223510.jpg&quot; alt=&quot;Huai khwang terrace 1&quot; /&gt;
+&lt;img src=&quot;/images/posts/2018-bkk/20180830_223659.jpg&quot; alt=&quot;Huai khwang terrace 나이쏘이2&quot; /&gt;
+&lt;img src=&quot;/images/posts/2018-bkk/20180830_224136.jpg&quot; alt=&quot;Huai khwang terrace 나이쏘이3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;미리 섭외한(?) 현지 친구와 담소를 나누고자 방문한 Huai khwang의 &lt;code class=&quot;highlighter-rouge&quot;&gt;Terrace&lt;/code&gt;라는 술집.&lt;br /&gt;
+매장 면적이 비교적 넓은 편이며, 분위기가 괜찮은 편이다.&lt;br /&gt;
+라이브 밴드의 신명나는 연주와 더불어 노래방, 당구대 등의 시설을 &lt;code class=&quot;highlighter-rouge&quot;&gt;유료&lt;/code&gt;로 이용할 수 있다.&lt;br /&gt;
+음식은 다소 비싼편이다.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Aug 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/travel/2018/08/29/%ED%83%9C%EA%B5%AD-%EC%8B%B1%EA%B0%80%ED%8F%B4-%EC%97%AC%ED%96%89/</link>
+        <guid isPermaLink="true">http://localhost:4000/travel/2018/08/29/%ED%83%9C%EA%B5%AD-%EC%8B%B1%EA%B0%80%ED%8F%B4-%EC%97%AC%ED%96%89/</guid>
+      </item>
+    
+
+    
+      
+        
+      
+    
+      
+        
+          <item>
+            <title>About</title>
+            <description>&lt;p&gt;나의 일대기를 &lt;code class=&quot;highlighter-rouge&quot;&gt;해학&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;현학&lt;/code&gt;을 담아내어 기록하고 싶지만 식견이 짧은 까닭에 &lt;code class=&quot;highlighter-rouge&quot;&gt;옹졸함&lt;/code&gt;만 뽐내는게 아닌가 싶은 블로그.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;1988년생.&lt;br /&gt;
+김봉준&lt;/p&gt;
+
+</description>
+            <link>http://localhost:4000/about.html</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Style Guide</title>
+            <description>At [Aspire Themes](http://aspirethemes.com/) I use a lot of tools to help me create WordPress, Ghost and Jekyll themes. Tools will range from development, design, services, hosting and automation.
+
+Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana.
+
+---
+
+# Simple default styles for headings
+
+## Simple default styles for headings
+
+### Simple default styles for headings
+
+#### Simple default styles for headings
+
+##### Simple default styles for headings
+
+###### Simple default styles for headings
+
+---
+
+* Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
+* Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor.
+* Donec nibh massa, rutrum a sollicitudin eu, lacinia in lorem.
+
+---
+
+1. Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
+2. Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor in.
+3. Donec nibh massa, rutrum a sollicitudin eu.
+
+---
+
+&gt; Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana
+
+---
+
+{% highlight js %}
+'use strict';
+var markdown = require('markdown').markdown;
+function Editor(input, preview) {
+  this.update = function() {
+    preview.innerHTML = markdown.toHTML(input.value);
+  };
+  input.editor = this;
+  this.update();
+}
+{% endhighlight %}
+
+You can add inline code just like this, E.g. `.code { color: #fff; }`
+
+{% highlight css %}
+pre {
+  background-color: #f4f4f4;
+  max-width: 100%;
+  overflow: auto;
+}
+{% endhighlight %}
+
+---
+
+Cras sed sodales enim. Duis nec erat magna. Sed scelerisque pretium mi et [unsplash](https://unsplash.com/) ullamcorper mauris aliquam ornare fringilla. In luctus commodo quam eget posuere.
+
+---
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/97202679&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+&lt;iframe src=&quot;https://embed.ted.com/talks/ted_halstead_a_climate_solution_where_all_sides_can_win&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29738591&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;&lt;/iframe&gt;
+
+---
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWvpRo&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;kharrop&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Referral Form&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/kharrop/pen/YWvpRo/&quot;&gt;Referral Form&lt;/a&gt; by Kelly Harrop (&lt;a href=&quot;http://codepen.io/kharrop&quot;&gt;@kharrop&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+---
+
+![about](/images/pages/about.jpeg)
+
+---
+
+&lt;input type=&quot;text&quot; placeholder=&quot;I'm an input field!&quot;&gt;
+
+---
+
+&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
+
+&lt;button class='c-btn'&gt;Button&lt;/button&gt;
+
+&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
+
+{% highlight html %}
+&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
+&lt;button class='c-btn'&gt;Button&lt;/button&gt;
+&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
+{% endhighlight %}
+</description>
+            <link>http://localhost:4000/style-guide.html</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+  </channel>
+</rss>

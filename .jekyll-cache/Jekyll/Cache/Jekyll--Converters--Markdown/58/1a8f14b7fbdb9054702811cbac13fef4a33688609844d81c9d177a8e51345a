@@ -1,0 +1,49 @@
+I"=<h4 id="마크다운">마크다운?</h4>
+
+<p><code class="highlighter-rouge">.md</code> 마크업 언어의 일종. 일반 텍스트 문서의 양식을 편집하는 문법.</p>
+
+<h5 id="--강조">- 강조</h5>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">이텔릭체는 <span class="ge">*별표(asterisks)*</span> 혹은 _언더바(underscore)_를 사용  
+두껍게는 <span class="gs">**별표(asterisks)**</span> 혹은 __언더바(underscore)__를 사용  
+<span class="gs">**_이텔릭체_와 두껍게**</span>를 같이 사용  
+취소선은 ~~물결표시(tilde)~~를 사용  
+<span class="nt">&lt;u&gt;</span>밑줄<span class="nt">&lt;/u&gt;</span>은 <span class="sb">`&lt;u&gt;&lt;/u&gt;`</span>를 사용  </code></pre></figure>
+
+<h5 id="--리스트">- 리스트</h5>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> 순서가 필요한 목록
+<span class="p">1.</span> 순서가 필요한 목록
+<span class="p">  -</span> 순서가 필요하지 않은 목록(서브) 
+<span class="p">  -</span> 순서가 필요하지 않은 목록(서브) 
+<span class="p">1.</span> 순서가 필요한 목록
+<span class="p">  1.</span> 순서가 필요한 목록(서브)
+<span class="p">  1.</span> 순서가 필요한 목록(서브)
+<span class="p">1.</span> 순서가 필요한 목록
+<span class="p">
+-</span> 순서가 필요하지 않은 목록에 사용 가능한 기호
+<span class="p">  -</span> 대쉬(hyphen)
+<span class="p">  *</span> 별표(asterisks)
+<span class="p">  +</span> 더하기(plus sign)</code></pre></figure>
+
+<h5 id="--링크">- 링크</h5>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">NAVER</span><span class="p">](</span><span class="sx">https://naver.com</span><span class="p">)</span>
+<span class="p">[</span><span class="nv">NAVER</span><span class="p">](</span><span class="sx">https://naver.com</span> <span class="nn">"Title Attritube"</span><span class="p">)</span>
+<span class="p">[</span><span class="nv">NAVER</span><span class="p">](</span><span class="sx">https://naver.com</span> <span class="nn">"Title Attritube"</span><span class="p">)</span>{:target="_타겟종류"}</code></pre></figure>
+
+<h5 id="--이미지">- 이미지</h5>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">![</span><span class="nv">alt태그</span><span class="p">][</span><span class="ss">이미지경로 "링크 Title"</span><span class="p">]</span>
+※ figcaption용 커스텀 (CSS 요구 됨)
+<span class="p">![</span><span class="nv">alt태그</span><span class="p">][</span><span class="ss">이미지경로 "링크 Title"</span><span class="p">]</span><span class="ge">*figcaption 내용*</span></code></pre></figure>
+
+<h5 id="--수평선">- 수평선</h5>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">* * *
+***
+*****</span>
+<span class="p">- - -
+---------------------------------------</span></code></pre></figure>
+
+:ET
