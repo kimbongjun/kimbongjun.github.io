@@ -25,8 +25,9 @@ $grid-gutter: $base-spacing-unit;
 }
 
 .o-grid__col {
-  // float: left;
+  //float: left;
   flex: auto;
+  position: relative;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
 

@@ -5,10 +5,35 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Oct 2019 16:32:12 +0900</pubDate>
-    <lastBuildDate>Mon, 28 Oct 2019 16:32:12 +0900</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2019 17:42:17 +0900</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2019 17:42:17 +0900</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
 
+    
+      <item>
+        <title>생일</title>
+        <description>&lt;h4 id=&quot;32번째-생일&quot;&gt;32번째 생일&lt;/h4&gt;
+
+&lt;h5 id=&quot;--숙취&quot;&gt;- 숙취&lt;/h5&gt;
+
+&lt;p&gt;전 날 &lt;code class=&quot;highlighter-rouge&quot;&gt;과음&lt;/code&gt;을 했던지라 올해 생일은 참으로 힘들게 시작했다.&lt;br /&gt;
+간의 해독 능력이 갈수록 떨어지는 것 같아 서운하다.&lt;br /&gt;
+팀에서 유일하게 알콜과 맞설 수 있는 롤이기에 어깨가 무겁다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;점심&lt;/code&gt;은 &lt;code class=&quot;highlighter-rouge&quot;&gt;스윗밸런스&lt;/code&gt; 라는 곳에서 풀떼기 섭취로 병든 속을 달랬다.&lt;br /&gt;
+역시 숙취해소에는 녹색채소다.&lt;/p&gt;
+
+&lt;p&gt;음식은 맛이 좋은 편이며 &lt;code class=&quot;highlighter-rouge&quot;&gt;여성&lt;/code&gt;이 좋아할 만 한 비주얼의 음식점이다.&lt;/p&gt;
+
+&lt;h5 id=&quot;--손절&quot;&gt;- 손절&lt;/h5&gt;
+
+&lt;p&gt;그 간 나눈 정을 고려했을 때 마땅해야 될 부분이 그러지 못하니 안타깝다.  &lt;br /&gt;
+그들의 비루한 처세에 개탄을 금치 못하여 &lt;code class=&quot;highlighter-rouge&quot;&gt;손절&lt;/code&gt;의 철퇴를 휘둘러야겠다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/daily/2019/10/29/%EC%83%9D%EC%9D%BC/</link>
+        <guid isPermaLink="true">http://localhost:4000/daily/2019/10/29/%EC%83%9D%EC%9D%BC/</guid>
+      </item>
     
       <item>
         <title>마크다운</title>
@@ -116,8 +141,8 @@
 &lt;p&gt;&lt;a href=&quot;https://mylko72.gitbooks.io/git/content/remote/remote_update.html&quot; target=&quot;_blank&quot;&gt;※ 참고&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Oct 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/web/2019/10/25/git%EB%B8%8C%EB%9E%9C%EB%93%9C%EA%B4%80%EB%A0%A8/</link>
-        <guid isPermaLink="true">http://localhost:4000/web/2019/10/25/git%EB%B8%8C%EB%9E%9C%EB%93%9C%EA%B4%80%EB%A0%A8/</guid>
+        <link>http://localhost:4000/web/2019/10/25/git%EB%B8%8C%EB%9E%9C%EC%B9%98%EA%B4%80%EB%A0%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/web/2019/10/25/git%EB%B8%8C%EB%9E%9C%EC%B9%98%EA%B4%80%EB%A0%A8/</guid>
       </item>
     
       <item>
@@ -154,6 +179,24 @@
         <pubDate>Fri, 04 Oct 2019 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/travel/2019/10/04/%EB%8B%A4%EB%82%AD%EC%97%AC%ED%96%89/</link>
         <guid isPermaLink="true">http://localhost:4000/travel/2019/10/04/%EB%8B%A4%EB%82%AD%EC%97%AC%ED%96%89/</guid>
+      </item>
+    
+      <item>
+        <title>여행 - 태국</title>
+        <description>&lt;h3 id=&quot;또국&quot;&gt;또국&lt;/h3&gt;
+
+&lt;p&gt;태국 전도사로서 주변 지인들에게 태국 여행을 지겹게도 추천한다.&lt;br /&gt;
+여느 때 지난 여행의 무용담을 털어놓다 깊게 탄복한 군대 동기 한 명과 금년 두 번째 태국행 비행기에 몸을 실었다.&lt;/p&gt;
+
+&lt;h3 id=&quot;방콕-파타야&quot;&gt;방콕, 파타야&lt;/h3&gt;
+
+&lt;p&gt;이번 여행의 행선지는 &lt;code class=&quot;highlighter-rouge&quot;&gt;방콕&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;파타야&lt;/code&gt;다.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;방콕&lt;/code&gt;은 3번째 방문이다. 참 추억(?)이 많은 곳이다.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;파타야&lt;/code&gt;는 일전에 &lt;code class=&quot;highlighter-rouge&quot;&gt;워크샵&lt;/code&gt;으로 방문했던 적이 있었는데 아무래도 오피셜 한 관계인 사우들과 방문했던지라 도시와의 친밀도가 낮은 상태였다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Dec 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/travel/2018/12/18/%ED%83%9C%EA%B5%AD%EC%97%AC%ED%96%89/</link>
+        <guid isPermaLink="true">http://localhost:4000/travel/2018/12/18/%ED%83%9C%EA%B5%AD%EC%97%AC%ED%96%89/</guid>
       </item>
     
       <item>
@@ -357,6 +400,8 @@ Cras sed sodales enim. Duis nec erat magna. Sed scelerisque pretium mi et [unspl
             <link>http://localhost:4000/style-guide.html</link>
           </item>
         
+      
+    
       
     
       

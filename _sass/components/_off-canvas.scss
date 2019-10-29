@@ -93,8 +93,13 @@ body {
   transition: transform $global-transition cubic-bezier(.16, .68, .43, .99);
 
   &.is-active {
-    transform: translate3d(- $off-canvas-width, 0, 0);
-
+    transform: translate3d(-$off-canvas-width, 0, 0);
+    .c-off-canvas-content{
+      [class*=ie] &{        
+        transform: translate3d(0, 0, 0);
+        z-index: 9999;
+      }      
+    }
     &:after {
       position: fixed;
       top: 0;
