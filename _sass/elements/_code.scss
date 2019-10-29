@@ -4,7 +4,7 @@
 
 pre,
 code {
-  font-family: $font-monospace;
+  font-family: $font-base;
   background-color: $bg-color-gray;
 }
 
@@ -16,6 +16,9 @@ pre {
   line-height: $line-height-base;
   white-space: pre-wrap;
   word-wrap: break-word;
+  &.highlight{
+    font-family: $font-monospace;
+  }
 }
 
 li code,
