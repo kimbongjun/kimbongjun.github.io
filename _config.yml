@@ -18,7 +18,7 @@ facebook: "https://www.facebook.com/mbongjun"
 comments: true
 markdown: kramdown
 permalink: pretty
-paginate: 10
+paginate: 5
 
 sass:
   style: compressed
