@@ -18,6 +18,9 @@ pre {
   word-wrap: break-word;
   &.highlight{
     font-family: $font-monospace !important;
+    code{
+      font-family: $font-monospace !important;
+    }
   }
 }
 
