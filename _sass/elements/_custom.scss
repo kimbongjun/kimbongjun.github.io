@@ -36,3 +36,15 @@ img+em {
 h5 {
   margin-bottom: 1rem;
 }
+
+blockquote {
+
+  ul,
+  ol {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
