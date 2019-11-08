@@ -41,6 +41,14 @@ h5 {
   margin-bottom: 1rem;
 }
 
+ol {
+  li {
+    img {
+      padding: 1rem 0;
+    }
+  }
+}
+
 blockquote {
 
   ul,
@@ -48,10 +56,6 @@ blockquote {
     li {
       &:not(:last-child) {
         margin-bottom: 0.5rem;
-      }
-
-      img {
-        padding: 1rem 0;
       }
     }
   }
