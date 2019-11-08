@@ -6,6 +6,7 @@ a {
   text-decoration: none;
   color: $color-link;
   transition: $global-transition;
+  word-break: break-all;
 
   @include attention() {
     text-decoration: underline;
