@@ -43,6 +43,10 @@ h5 {
 
 ol {
   li {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+
     img {
       padding: 1rem 0;
     }
