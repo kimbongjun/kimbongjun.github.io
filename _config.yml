@@ -11,10 +11,7 @@ email: "blingface@naver.com"
 description: ""
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "https://kimbongjun.github.io" # The base hostname & protocol for your site
-youtube: "https://www.youtube.com/channel/UCBu2FcbFuIDQjWywVR_-R3g?view_as=subscriber"
 github: "https://github.com/kimbongjun"
-instagram: "https://www.instagram.com/kimbongjour/"
-facebook: "https://www.facebook.com/mbongjun"
 comments: true
 markdown: kramdown
 permalink: pretty
