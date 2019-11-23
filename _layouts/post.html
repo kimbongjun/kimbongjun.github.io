@@ -18,9 +18,11 @@ layout: default
         <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}'
           itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
         {%- if page.last_modified_at -%}
-        Last updated: {{ page.last_modified_at | date: date_format }}
+        Update : <time class='c-post__date' datatime='{{ page.last_modified_at | date: date_format }}'>
+          {{ page.last_modified_at | date: date_format }}
+        </time>
         {%- else -%}
-        Last updated: {{ page.date | date: date_format }}
+        Update : {{ page.date | date: date_format }}
         {%- endif -%}
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
