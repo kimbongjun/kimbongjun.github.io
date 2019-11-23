@@ -17,6 +17,11 @@ layout: default
         <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
         <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}'
           itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
+        {%- if page.last_modified_at -%}
+        Last updated: {{ page.last_modified_at | date: date_format }}
+        {%- else -%}
+        Last updated: {{ page.date | date: date_format }}
+        {%- endif -%}
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
 
