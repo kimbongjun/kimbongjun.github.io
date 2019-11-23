@@ -17,12 +17,13 @@ layout: default
         <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
         <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}'
           itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
+        {% if post.last_modified_at %}
+        (Updated: <time
+          datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
+        {% endif %}
         <p class="post-meta">
           <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-          {% if post.sitemap.lastmod %}
-          ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
-          {% endif %}
           {% if page.last_modified_at %}
           (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
             itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
@@ -32,6 +33,7 @@ layout: default
               itemprop="name">{{ page.author }}</span></span>
           {% endif %}
         </p>
+
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
 
