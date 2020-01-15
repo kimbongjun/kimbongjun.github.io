@@ -14,9 +14,9 @@ last_modified_at: 2020-01-15
 
 #### - Cloudfront Console
 
-(https://console.aws.amazon.com/cloudfront/home){:target="\_blank"}
+[https://console.aws.amazon.com/cloudfront/home](https://console.aws.amazon.com/cloudfront/home){:target="\_blank"}
 
-우선, (https://aws.amazon.com/ko/getting-started/tutorials/deliver-content-faster/){:target="\_blank"} 여기 링크를 참고하여 "배포"에 대한 생성을 끝마친다.
+우선, [https://aws.amazon.com/ko/getting-started/tutorials/deliver-content-faster/](https://aws.amazon.com/ko/getting-started/tutorials/deliver-content-faster/){:target="\_blank"} 여기 링크를 참고하여 "배포"에 대한 생성을 끝마친다.
 
 #### - Cloudfront가 할당한 도메인이 아닌 원하는 도메인으로 배포 URL 연결하기
 
@@ -35,7 +35,7 @@ dleov5lkjdbta.cloudfront.net 이런 도메인 구조는 흉측하고 혐오스�
 
 ##### 1. ACM에서 기존 소유한 인증서를 가져오기
 
-(https://console.aws.amazon.com/acm/home?region=us-east-1#/importwizard/){:target="\_blank"} 이동
+[SSL 가져오기](https://console.aws.amazon.com/acm/home?region=us-east-1#/importwizard/){:target="\_blank"} 이동
 
 ![Cloudfront2](/images/posts/aws-200115-2.png "Cloudfront2")
 
