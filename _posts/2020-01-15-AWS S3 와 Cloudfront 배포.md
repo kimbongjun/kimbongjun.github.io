@@ -12,9 +12,7 @@ last_modified_at: 2020-01-15
 버킷 생성 후 업로드 하는 과정은 굉장히 쉽다.  
 다만 업로드 한 콘텐츠를 글로벌하게 전송, 가속화하기 위한 수단으로 Cloudfront 서비스까지 이용해야 화룡점정이라 할 수 있다.
 
-#### - Cloudfront Console
-
-[https://console.aws.amazon.com/cloudfront/home](https://console.aws.amazon.com/cloudfront/home){:target="\_blank"}
+#### - Cloudfront Console [#](https://console.aws.amazon.com/cloudfront/home){:target="\_blank"}
 
 우선, [https://aws.amazon.com/ko/getting-started/tutorials/deliver-content-faster/](https://aws.amazon.com/ko/getting-started/tutorials/deliver-content-faster/){:target="\_blank"} 여기 링크를 참고하여 "배포"에 대한 생성을 끝마친다.
 
