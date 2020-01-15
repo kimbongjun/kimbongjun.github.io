@@ -2,7 +2,7 @@
 layout: post
 title: AWS S3 와 Cloudfront 배포
 tags: aws
-image: "/images/posts/20170509_Amazon-Cloudfront"
+image: "/images/posts/20170509_Amazon-Cloudfront.png"
 categories: [web]
 last_modified_at: 2020-01-15
 ---
