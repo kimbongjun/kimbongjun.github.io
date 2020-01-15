@@ -9,7 +9,9 @@ last_modified_at: 2020-01-15
 
 ### AWS S3 업로드와 이를 배포하기 위한 Cloudfront
 
-버킷 생성 후 업로드 하는 과정은 굉장히 쉽다.  
+##### Amazon S3 [#](https://s3.console.aws.amazon.com/s3/home){:target="\_blank"}
+
+아마존 S3에서 버킷 생성 후 업로드 하는 과정은 굉장히 쉽다. [※ 참고](https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/gsg/GetStartedWithS3.html){:target="\_blank"}  
 다만 업로드 한 콘텐츠를 글로벌하게 전송, 가속화하기 위한 수단으로 Cloudfront 서비스까지 이용해야 화룡점정이라 할 수 있다.
 
 #### - Cloudfront Console [#](https://console.aws.amazon.com/cloudfront/home){:target="\_blank"}
@@ -29,7 +31,7 @@ dleov5lkjdbta.cloudfront.net 이런 도메인 구조는 흉측하고 혐오스�
 물론 안 될 것이다.
 
 이유는 ACM 에서 등록이 된 주소가 아직은 없기 때문이다.  
-밑에 Request or Import a Certificate with ACM 버튼을 클릭 후 가지고 있는 SSL 도메인을 인증해주기 위한 절차를 밟는다.
+밑에 `Request or Import a Certificate with ACM` 버튼을 클릭 후 가지고 있는 SSL 도메인을 인증해주기 위한 절차를 밟는다.
 
 ##### 1. ACM에서 기존 소유한 인증서를 가져오기
 
