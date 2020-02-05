@@ -35,14 +35,13 @@ layout: default
           <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
           {% endfor %}
         </div>
-        <amp-ad width="100vw" height="320"
-        type="adsense"
-        data-ad-client="ca-pub-2403355529022403"
-        data-ad-slot="7463499738"
-        data-auto-format="rspv"
-        data-full-width="">
-        <div overflow=""></div>
-        </amp-ad>        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 깃허브광고 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2403355529022403"
+          data-ad-slot="7463499738" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         {% include disqus.html %}
       </article>
     </div>
