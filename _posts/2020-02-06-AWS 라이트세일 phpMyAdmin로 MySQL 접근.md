@@ -20,13 +20,13 @@ last_modified_at: 2020-02-06
 
 {% highlight markdown %}
 [준비물]
-1. [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){:target="\_blank"}
+1. Putty
 2. ppk 파일
 3. 라이트세일의 Public IP
 4. bitnami 비밀번호 (ssh에서 `cat bitnami_application_password` 을 통해 얻음)
 {% endhighlight %}
 
-준비물이 갖춰졌다면 Putty를 실행한다.
+준비물이 갖춰졌다면 [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){:target="\_blank"}를 실행한다.
 
 ##### 첫째, `Session` -> Public IP를 입력한다.
 ![phpmyadmin](/images/posts/200206-aws-phpmyadmin.png "phpmyadmin")
