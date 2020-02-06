@@ -42,5 +42,3 @@ last_modified_at: 2020-02-06
 ![phpmyadmin5](/images/posts/200206-aws-phpmyadmin-5.jpg "phpmyadmin5")
 ##### 일곱째, 브라우저의 주소창에 http://127.0.0.1:8888/phpmyadmin/ 에 접속해서 phpMyAdmin 로그인 화면이 나오면 성공. (계정정보는 root / bitnami 비밀번호)
 ![phpmyadmin6](/images/posts/200206-aws-phpmyadmin-6.png "phpmyadmin6")
-##### 참고 영상
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/9VdcQLDmYII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

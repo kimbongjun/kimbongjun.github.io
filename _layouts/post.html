@@ -12,7 +12,17 @@ layout: default
 
   <div class='o-grid' style="display: block;">
     <div class='o-grid__col' style="float: none;">
-      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting' style="margin-bottom: 1rem;">
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting' style="margin-bottom: 1rem;">        
+        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
+        <p class="c-post__date">          
+          <time datetime='{{ page.date | date_to_xmlschema }}'
+            itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
+          <br />
+          {% if page.last_modified_at %}
+          Last Updated : <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+            itemprop="dateModified">{{ page.last_modified_at | date: '%Y년 %m월 %d일' }}</time>
+          {% endif %}
+        </p>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
         style="display:block; text-align:center;"
@@ -22,24 +32,14 @@ layout: default
         data-ad-slot="1608344306"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
-        <p class="c-post__date">
-          <time datetime='{{ page.date | date_to_xmlschema }}'
-            itemprop='datePublished'>{{ page.date | date: '%Y년 %m월 %d일' }}</time>
-          <br />
-          {% if page.last_modified_at %}
-          Last Updated : <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
-            itemprop="dateModified">{{ page.last_modified_at | date: '%Y년 %m월 %d일' }}</time>
-          {% endif %}
-        </p>
+        </script>        
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
 
           {{ content }}
         </div>
 
-        <div class='c-tags'>
+        <div class='c-tags' style="margin-bottom: 1rem;">
           {% for tag in page.tags %}
           <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
           {% endfor %}
