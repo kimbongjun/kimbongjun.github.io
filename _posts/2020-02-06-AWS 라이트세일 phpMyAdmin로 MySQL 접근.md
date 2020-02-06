@@ -54,12 +54,12 @@ last_modified_at: 2020-02-06
 
 준비물이 갖춰졌다면 terminal을 실행시킨다.
 
-##### 첫째, Terminal 에서 ₩ssh -N -L 8888:127.0.0.1:80 -i KEYFILE bitnami@SERVER-IP₩ 다음과 같이 입력한다.
+##### 첫째, Terminal 에서 `ssh -N -L 8888:127.0.0.1:80 -i KEYFILE bitnami@SERVER-IP` 다음과 같이 입력한다.  
 ex. ssh -N -L 8888:127.0.0.1:80 -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10
 
 ![phpmyadmin7](/images/posts/200206-aws-phpmyadmin-7.png "phpmyadmin7")
 
-참고, 위에는 ssh 연결에 대한 Command 이고, 접속을 원한다면 다음과 같이 입력해주면 된다.
-₩ssh -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10₩
+참고, 위에는 ssh 연결에 대한 Command 이고, 접속을 원한다면 다음과 같이 입력해주면 된다.  
+`ssh -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10`
 
 ##### 둘째, 브라우저의 주소창에 http://127.0.0.1:8888/phpmyadmin/ 으로 접속해서 phpMyAdmin 로그인 화면이 나오면 성공. (계정정보는 root / bitnami 비밀번호)
