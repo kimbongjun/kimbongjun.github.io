@@ -4,7 +4,7 @@ title: AWS 라이트세일 phpMyAdmin로 MySQL 접근
 tags: 
 - aws
 - mysql
-image: "/images/posts/200123_Bitnami_logo.png"
+image: "/images/posts/phpmyadmin.png"
 categories: [web]
 last_modified_at: 2020-02-06
 ---
@@ -42,3 +42,24 @@ last_modified_at: 2020-02-06
 ![phpmyadmin5](/images/posts/200206-aws-phpmyadmin-5.jpg "phpmyadmin5")
 ##### 일곱째, 브라우저의 주소창에 http://127.0.0.1:8888/phpmyadmin/ 으로 접속해서 phpMyAdmin 로그인 화면이 나오면 성공. (계정정보는 root / bitnami 비밀번호)
 ![phpmyadmin6](/images/posts/200206-aws-phpmyadmin-6.png "phpmyadmin6")
+
+#### 2. Mac OS X 환경에서 phpMyAdmin 접속
+
+{% highlight markdown %}
+[준비물]
+1. pem 파일 (라이트세일 로그인 후 다운로드 가능)
+2. 라이트세일의 Public IP
+3. bitnami 비밀번호 (ssh에서 `cat bitnami_application_password` 을 통해 얻음)
+{% endhighlight %}
+
+준비물이 갖춰졌다면 terminal을 실행시킨다.
+
+##### 첫째, Terminal 에서 ₩ssh -N -L 8888:127.0.0.1:80 -i KEYFILE bitnami@SERVER-IP₩ 다음과 같이 입력한다.
+ex. ssh -N -L 8888:127.0.0.1:80 -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10
+
+![phpmyadmin7](/images/posts/200206-aws-phpmyadmin-7.png "phpmyadmin7")
+
+참고, 위에는 ssh 연결에 대한 Command 이고, 접속을 원한다면 다음과 같이 입력해주면 된다.
+₩ssh -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10₩
+
+##### 둘째, 브라우저의 주소창에 http://127.0.0.1:8888/phpmyadmin/ 으로 접속해서 phpMyAdmin 로그인 화면이 나오면 성공. (계정정보는 root / bitnami 비밀번호)
