@@ -16,9 +16,19 @@ pre {
   line-height: $line-height-base;
   white-space: pre-wrap;
   word-wrap: break-word;
-  &.highlight{
+
+  &.highlight {
     font-family: $font-monospace !important;
-    code{
+
+    code {
+      font-family: $font-monospace !important;
+    }
+  }
+}
+
+figure.highlight {
+  pre {
+    code {
       font-family: $font-monospace !important;
     }
   }
