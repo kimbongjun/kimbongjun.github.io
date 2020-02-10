@@ -1,0 +1,24 @@
+I"#<h4 id="준비물">준비물</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Windows - 명령 프롬프트
+2. Mac OS - terminal
+</code></pre></div></div>
+
+<h4 id="nslookup-기본-명령어">nslookup 기본 명령어</h4>
+
+<p><code class="highlighter-rouge">$ nslookup naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="err">$</span> <span class="n">nslookup</span> <span class="n">naver</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Server</span><span class="p">:</span>		<span class="mf">168.126.63.1</span>
+<span class="n">Address</span><span class="p">:</span>	<span class="mf">168.126.63.1</span><span class="c1">#53
+</span>
+<span class="n">Non</span><span class="o">-</span><span class="n">authoritative</span> <span class="n">answer</span><span class="p">:</span>
+<span class="n">Name</span><span class="p">:</span>	<span class="n">naver</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">125.209.222.141</span>
+<span class="n">Name</span><span class="p">:</span>	<span class="n">naver</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">210.89.164.90</span>
+<span class="n">Name</span><span class="p">:</span>	<span class="n">naver</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">210.89.160.88</span>
+<span class="n">Name</span><span class="p">:</span>	<span class="n">naver</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Address</span><span class="p">:</span> <span class="mf">125.209.222.142</span></code></pre></figure>
+
+:ET

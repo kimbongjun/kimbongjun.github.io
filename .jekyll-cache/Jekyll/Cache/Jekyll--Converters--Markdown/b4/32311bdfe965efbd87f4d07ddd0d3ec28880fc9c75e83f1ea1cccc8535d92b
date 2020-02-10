@@ -1,0 +1,47 @@
+I"6	
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">To Do List</span><span class="p">]</span>
+<span class="p">
+1.</span> Document Root를 /apache2/htdocs가 아닌 임의 작업 경로로 변경.
+<span class="p">2.</span> localhost or 127.0.0.1이 아닌 임의 도메인으로 접속 가능하게 변경.</code></pre></figure>
+
+<h5 id="1-호스트-파일에-가상으로-사용할-도메인을-저장">1. 호스트 파일에 가상으로 사용할 도메인을 저장.</h5>
+
+<p>바탕화면에서 바로가기 만들기를 통해 hosts 파일을 생성해준다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Windows\System32\notepad.exe C:\windows\system32\drivers\etc\hosts
+</code></pre></div></div>
+
+<p>127.0.0.1 example.com 과 같이 로컬에서 사용할 도메인을 입력 후 저장. (관리자 권한)</p>
+
+<h5 id="2-httpdconf-파일에서--virtual-hosts-주석-해제">2. httpd.conf 파일에서 # Virtual hosts 주석 해제.</h5>
+
+<p><code class="highlighter-rouge">\apache2\conf\httpd.conf</code> 해당 파일 실행 후 아래의 내용을 주석 <code class="highlighter-rouge">해제</code> 해준다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Virtual hosts
+Include conf/extra/httpd-vhosts.conf
+</code></pre></div></div>
+
+<h5 id="3-httpd-vhostsconf-파일에서-도메인을-매핑-시켜준다">3. httpd-vhosts.conf 파일에서 도메인을 매핑 시켜준다</h5>
+
+<p><code class="highlighter-rouge">\apache2\conf\extra\httpd-vhosts.conf</code> 에서 예제 내용들은 지워준 뒤 아래와 같이 입력 후 저장해준다. (80포트 기준)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost *:80&gt;
+ServerName example.com
+ServerAlias example.com
+DocumentRoot "로컬 작업 경로"
+  &lt;Directory "로컬 작업 경로"&gt;
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    &lt;IfVersion &lt; 2.3 &gt;
+      Order allow,deny
+      Allow from all
+    &lt;/IfVersion&gt;
+    &lt;IfVersion &gt;= 2.3 &gt;
+      Require all granted
+    &lt;/IfVersion&gt;
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre></div></div>
+
+<h5 id="4-apache를-리셋해준다">4. Apache를 리셋해준다.</h5>
+:ET

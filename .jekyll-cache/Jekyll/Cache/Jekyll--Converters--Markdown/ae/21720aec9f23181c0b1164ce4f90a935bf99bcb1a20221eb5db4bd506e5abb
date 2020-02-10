@@ -1,0 +1,73 @@
+I"�<h3 id="aws-lightsail-이전">AWS Lightsail 이전</h3>
+
+<p>기존에 연습을 토대로 실제 이전 작업을 진행하였다.</p>
+
+<h4 id="--이전-내용-간략">- 이전 내용 간략</h4>
+
+<ol>
+  <li>도메인 DNS 연결</li>
+  <li>SSL 설치</li>
+  <li>카페24 단일 웹호스팅의 사이트를 멀티사이트의 서브사이트로 이전</li>
+</ol>
+
+<h4 id="--이전-내용-세부">- 이전 내용 세부</h4>
+
+<h5 id="1-도메인-dns-연결">1. 도메인 DNS 연결</h5>
+
+<p>라이트세일에서 <code class="highlighter-rouge">DNS 영역 생성</code>을 통해 도메인 등록 후 레코드 정보를 추가해준다.</p>
+
+<p><img src="/images/posts/2019_12_02_dns.png" alt="라이트세일" title="lightsail" /></p>
+
+<p>네임서버는 도메인을 구매 한 업체에 등록해주면 된다.</p>
+
+<h5 id="2-ssl-설치">2. SSL 설치</h5>
+
+<p>앞서 포스팅한 <a href="https://kimbongjun.github.io/web/2019/11/08/AWS-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC-%EB%AC%B4%EB%A3%8C-SSL-%EC%84%A4%EC%B9%98/" target="\_blank">SSL 설치 관련 글</a>을 토대로 SSL을 설치하였다.</p>
+
+<p>이후 멀티도메인을 쓰기 위하여 <code class="highlighter-rouge">/opt/bitnami/apache2/conf/bitnami</code> 경로에 하기 내용을 추가하였다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost *:443&gt; // SSL이기 때문에 443포트
+SSLEngine on
+DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
+ServerName 도메인명
+ServerAlias www.도메인명
+
+SSLCertificateFile /etc/letsencrypt/live/도메인명/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/도메인명/privkey.pem
+SSLCACertificateFile /etc/letsencrypt/live/도메인명/fullchain.pem
+
+# Bitnami applications installed with a prefix URL (default)
+Include "/opt/bitnami/apache2/conf/bitnami/bitnami-apps-prefix.conf"
+&lt;/VIrtualHost&gt;
+</code></pre></div></div>
+
+<p>SSL을 위한 작업은 마무리되었다.<br />
+하지만 phpmyadmin 접속이 불가하여 검색을 해보니 ssl 설치 후 리다이렉팅 관련하여 추가적인 작업이 필요하였다.</p>
+
+<p><a href="https://community.bitnami.com/t/phpmyadmin-access-redirect-https-www-127-0-0-1-8888-phpmyadmin/53463/7" target="\_blank">관련 문서</a>를 참고하여 <code class="highlighter-rouge">/opt/bitnami/apps/wordpress/conf</code> 에 내용을 추가하였고, putty에서 80포트를 443포트로 변경하니 접속이 잘 되었다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteCond %{REQUEST_URI} !^/phpmyadmin.*$
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/phpmyadmin/.*?$
+RewriteRule ^/(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+
+#접속은 https://127.0.0.1:8888/phpmyadmin/
+</code></pre></div></div>
+
+<h5 id="3-카페24-단일-웹호스팅의-사이트를-멀티사이트의-서브사이트로-이전">3. 카페24 단일 웹호스팅의 사이트를 멀티사이트의 서브사이트로 이전</h5>
+
+<p>워드프레스 사이트이기에 간편한 이전 플러그인인 <code class="highlighter-rouge">all in one migration</code>을 활용했다. 싱글-&gt;멀티로 이전하는 작업이기에 <code class="highlighter-rouge">Multisite Extension ($199)</code> 이 필요하다.<br />
+직접 mysql 덤프파일을 import하고 data를 migration 할 수도 있었지만 주말에 작업하는 것도 열받는데 노고를 가중시키기 싫었다.</p>
+
+<p>backup 파일 import 후 주소 및 파일 경로의 정보를 http-&gt;https로 변경하고자 <code class="highlighter-rouge">Really Simple SSL</code>를 활용했고 이후 잔여 404에러는 mysql query 및 수작업을 통해 매칭 시켜주었다. (기존 작업자들이 테마, 플러그인을 도배해서 작업하는 바람에 이전하는데 있어 상당한 불쾌감을 느꼈다.)</p>
+
+<h4 id="--끝으로">- 끝으로</h4>
+
+<p><code class="highlighter-rouge">되겠지? 될까?</code> 에 대한 두려움을 안고 진행했던 이전 작업이 생각보다 수월하게 <code class="highlighter-rouge">완료</code>되어서 기쁘다.
+직접 AWS의 서비스를 기호대로 세팅하고 안착시켰다는 후일담을 향후 면접 때 그럴싸하게 전해줘야 겠다.</p>
+
+<p><code class="highlighter-rouge">단일 인스턴스, 단일 계정</code> 으로 이뤄낸 <code class="highlighter-rouge">웹사이트 대통합</code>의 첫 걸음을 자축하며 20000</p>
+:ET

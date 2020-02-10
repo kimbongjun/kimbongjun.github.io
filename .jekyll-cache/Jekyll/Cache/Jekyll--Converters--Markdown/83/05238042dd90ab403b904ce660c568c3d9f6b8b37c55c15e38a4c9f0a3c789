@@ -1,0 +1,50 @@
+I"+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">To Do List</span><span class="p">]</span>
+<span class="p">
+1.</span> Windows 환경에서 phpMyAdmin 접속
+<span class="p">2.</span> Mac OS X 환경에서 phpMyAdmin 접속</code></pre></figure>
+
+<h4 id="1-windows-환경에서-phpmyadmin-접속--참고">1. Windows 환경에서 phpMyAdmin 접속 (※ <a href="https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/" target="\_blank">참고</a>)</h4>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">준비물</span><span class="p">]</span>
+<span class="p">1.</span> Putty
+<span class="p">2.</span> ppk 파일
+<span class="p">3.</span> 라이트세일의 Public IP
+<span class="p">4.</span> bitnami 비밀번호 (ssh에서 <span class="sb">`cat bitnami_application_password`</span> 을 통해 얻음)</code></pre></figure>
+
+<p>준비물이 갖춰졌다면 <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="\_blank">Putty</a>를 실행한다.</p>
+
+<h5 id="첫째-session---public-ip를-입력한다">첫째, <code class="highlighter-rouge">Session</code> -&gt; Public IP를 입력한다.</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin.png" alt="phpmyadmin" title="phpmyadmin" /></p>
+<h5 id="둘째-connection---ssh---auth---pravite-key-경로를-입력해준다">둘째, <code class="highlighter-rouge">Connection - SSH - Auth</code> -&gt; Pravite Key 경로를 입력해준다.</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin-1.jpg" alt="phpmyadmin1" title="phpmyadmin1" /></p>
+<h5 id="셋째-connection---ssh---tunnels---source-post-destination을-추가해준다-ssl을-적용해줬다면-localhost443-으로-destination을-기입">셋째, <code class="highlighter-rouge">Connection - SSH - Tunnels</code> -&gt; Source post, Destination을 추가해준다. (SSL을 적용해줬다면 localhost:443 으로 Destination을 기입)</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin-2.png" alt="phpmyadmin2" title="phpmyadmin2" /></p>
+<h5 id="넷째-connection---data-auto-login-username에-bitnami-입력">넷째, <code class="highlighter-rouge">Connection - Data</code> Auto-login username에 <code class="highlighter-rouge">bitnami</code> 입력.</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin-3.jpg" alt="phpmyadmin3" title="phpmyadmin3" /></p>
+<h5 id="다섯째-session으로-다시-이동-후-saved-sessions를-통해-현재까지-입력한-내용들을-저장해준다">다섯째, <code class="highlighter-rouge">Session</code>으로 다시 이동 후 Saved Sessions를 통해 현재까지 입력한 내용들을 저장해준다.</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin-4.jpg" alt="phpmyadmin4" title="phpmyadmin4" /></p>
+<h5 id="여섯째-session의-open-버튼을-클릭하여-ssh가-정상적으로-접속되는지-확인한다">여섯째, <code class="highlighter-rouge">Session</code>의 Open 버튼을 클릭하여 SSH가 정상적으로 접속되는지 확인한다.</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin-5.jpg" alt="phpmyadmin5" title="phpmyadmin5" /></p>
+<h5 id="일곱째-브라우저의-주소창에-http1270018888phpmyadmin-으로-접속해서-phpmyadmin-로그인-화면이-나오면-성공-계정정보는-root--bitnami-비밀번호">일곱째, 브라우저의 주소창에 http://127.0.0.1:8888/phpmyadmin/ 으로 접속해서 phpMyAdmin 로그인 화면이 나오면 성공. (계정정보는 root / bitnami 비밀번호)</h5>
+<p><img src="/images/posts/200206-aws-phpmyadmin-6.png" alt="phpmyadmin6" title="phpmyadmin6" /></p>
+
+<h4 id="2-mac-os-x-환경에서-phpmyadmin-접속">2. Mac OS X 환경에서 phpMyAdmin 접속</h4>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">준비물</span><span class="p">]</span>
+<span class="p">1.</span> pem 파일 (라이트세일 로그인 후 다운로드 가능)
+<span class="p">2.</span> 라이트세일의 Public IP
+<span class="p">3.</span> bitnami 비밀번호 (ssh에서 <span class="sb">`cat bitnami_application_password`</span> 을 통해 얻음)</code></pre></figure>
+
+<p>준비물이 갖춰졌다면 terminal을 실행시킨다.</p>
+
+<h5 id="첫째-terminal-에서-ssh--n--l-888812700180--i-keyfile-bitnamiserver-ip-다음과-같이-입력한다">첫째, Terminal 에서 <code class="highlighter-rouge">ssh -N -L 8888:127.0.0.1:80 -i KEYFILE bitnami@SERVER-IP</code> 다음과 같이 입력한다.</h5>
+<p>ex. ssh -N -L 8888:127.0.0.1:80 -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10</p>
+
+<p><img src="/images/posts/200206-aws-phpmyadmin-7.png" alt="phpmyadmin7" title="phpmyadmin7" /></p>
+
+<p>참고, 위에는 ssh 연결에 대한 Command 이고, 접속을 원한다면 다음과 같이 입력해주면 된다.<br />
+<code class="highlighter-rouge">ssh -i /Users/bongjour/Downloads/bongjour.pem bitnami@123.456.789.10</code></p>
+
+<h5 id="둘째-브라우저의-주소창에-http1270018888phpmyadmin-으로-접속해서-phpmyadmin-로그인-화면이-나오면-성공-계정정보는-root--bitnami-비밀번호">둘째, 브라우저의 주소창에 http://127.0.0.1:8888/phpmyadmin/ 으로 접속해서 phpMyAdmin 로그인 화면이 나오면 성공. (계정정보는 root / bitnami 비밀번호)</h5>
+:ET

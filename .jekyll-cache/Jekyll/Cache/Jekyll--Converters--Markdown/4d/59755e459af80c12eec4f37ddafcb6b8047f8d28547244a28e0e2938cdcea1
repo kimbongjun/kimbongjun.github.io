@@ -1,0 +1,111 @@
+I"V<h4 id="준비물">준비물</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Windows - 명령 프롬프트
+2. Mac OS - terminal
+</code></pre></div></div>
+
+<h4 id="nslookup-기본-명령어">nslookup 기본 명령어</h4>
+
+<h5 id="1-도메인-ip-조회">1. 도메인 ip 조회</h5>
+
+<p><code class="highlighter-rouge">$ nslookup naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nslookup naver.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+Name:	naver.com
+Address: 125.209.222.141
+Name:	naver.com
+Address: 210.89.164.90
+Name:	naver.com
+Address: 210.89.160.88
+Name:	naver.com
+Address: 125.209.222.142</code></pre></figure>
+
+<h5 id="2-도메인-nsname-server-레코드-조회">2. 도메인 NS(Name Server) 레코드 조회</h5>
+
+<p><code class="highlighter-rouge">$ nslookup -type=ns naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nslookup <span class="nt">-type</span><span class="o">=</span>ns naver.com 
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+naver.com	nameserver <span class="o">=</span> ns2.naver.com.
+naver.com	nameserver <span class="o">=</span> ns1.naver.com.
+
+Authoritative answers can be found from:
+ns1.naver.com	internet address <span class="o">=</span> 125.209.248.6
+ns2.naver.com	internet address <span class="o">=</span> 125.209.249.6</code></pre></figure>
+
+<h5 id="3-mxmail-record-레코드-조회">3. MX(Mail Record) 레코드 조회</h5>
+
+<p><code class="highlighter-rouge">nslookup -query=mx naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">nslookup <span class="nt">-query</span><span class="o">=</span>mx naver.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+naver.com	mail exchanger <span class="o">=</span> 10 mx3.naver.com.
+naver.com	mail exchanger <span class="o">=</span> 10 mx1.naver.com.
+naver.com	mail exchanger <span class="o">=</span> 10 mx2.naver.com.
+
+Authoritative answers can be found from:
+naver.com	nameserver <span class="o">=</span> ns2.naver.com.
+naver.com	nameserver <span class="o">=</span> ns1.naver.com.
+mx1.naver.com	internet address <span class="o">=</span> 125.209.238.100
+mx3.naver.com	internet address <span class="o">=</span> 125.209.222.14
+ns1.naver.com	internet address <span class="o">=</span> 125.209.248.6
+ns2.naver.com	internet address <span class="o">=</span> 125.209.249.6</code></pre></figure>
+
+<h5 id="3-cname-조회">3. CNAME 조회</h5>
+
+<p><code class="highlighter-rouge">nslookup -q=cname mail.solarmora.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">nslookup <span class="nt">-q</span><span class="o">=</span>cname mail.solarmora.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+mail.solarmora.com	canonical name <span class="o">=</span> ghs.googlehosted.com.
+
+Authoritative answers can be found from:
+solarmora.com	nameserver <span class="o">=</span> ns-cloud-b3.googledomains.com.
+solarmora.com	nameserver <span class="o">=</span> ns-cloud-b4.googledomains.com.
+solarmora.com	nameserver <span class="o">=</span> ns-cloud-b1.googledomains.com.
+solarmora.com	nameserver <span class="o">=</span> ns-cloud-b2.googledomains.com.
+ns-cloud-b1.googledomains.com	internet address <span class="o">=</span> 216.239.32.107
+ns-cloud-b2.googledomains.com	internet address <span class="o">=</span> 216.239.34.107
+ns-cloud-b3.googledomains.com	internet address <span class="o">=</span> 216.239.36.107
+ns-cloud-b4.googledomains.com	internet address <span class="o">=</span> 216.239.38.107
+ns-cloud-b1.googledomains.com	has AAAA address 2001:4860:4802:32::6b
+ns-cloud-b2.googledomains.com	has AAAA address 2001:4860:4802:34::6b
+ns-cloud-b3.googledomains.com	has AAAA address 2001:4860:4802:36::6b
+ns-cloud-b4.googledomains.com	has AAAA address 2001:4860:4802:38::6b</code></pre></figure>
+
+<h5 id="4-txt-레코드-조회">4. TXT 레코드 조회</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ nslookup
+&gt; set type=txt
+&gt; naver.com
+</code></pre></div></div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nslookup
+<span class="o">&gt;</span> <span class="nb">set type</span><span class="o">=</span>txt
+<span class="o">&gt;</span> naver.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+naver.com	text <span class="o">=</span> <span class="s2">"google-site-verification=fK9dDFcEOeNM2Wr3xzNAN-XLcerfAGpOABdSYiqw4_s"</span>
+naver.com	text <span class="o">=</span> <span class="s2">"google-site-verification=TX2ZPeYhsJwJ-zQKOLMgqsTx4R5mAlBy2CjxIcl2Xgc"</span>
+naver.com	text <span class="o">=</span> <span class="s2">"v=spf1 include:_spfblocka.naver.com include:_spfblockb.naver.com include:_spfblockc.naver.com include:_spfblockd.naver.com include:_spfblocke.naver.com include:_spfblockf.naver.com include:spf.worksmobile.com ~all"</span>
+
+Authoritative answers can be found from:
+naver.com	nameserver <span class="o">=</span> ns2.naver.com.
+naver.com	nameserver <span class="o">=</span> ns1.naver.com.
+ns1.naver.com	internet address <span class="o">=</span> 125.209.248.6
+ns2.naver.com	internet address <span class="o">=</span> 125.209.249.6</code></pre></figure>
+:ET

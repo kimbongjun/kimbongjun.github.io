@@ -1,0 +1,63 @@
+I"$
+<h4 id="준비물">준비물</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Windows - 명령 프롬프트
+2. Mac OS - terminal
+</code></pre></div></div>
+
+<h4 id="nslookup-기본-명령어">nslookup 기본 명령어</h4>
+
+<h5 id="1-도메인-ip-조회">1. 도메인 ip 조회</h5>
+
+<p><code class="highlighter-rouge">$ nslookup naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nslookup naver.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+Name:	naver.com
+Address: 125.209.222.141
+Name:	naver.com
+Address: 210.89.164.90
+Name:	naver.com
+Address: 210.89.160.88
+Name:	naver.com
+Address: 125.209.222.142</code></pre></figure>
+
+<h5 id="2-도메인-nsname-server-레코드-조회">2. 도메인 NS(Name Server) 레코드 조회</h5>
+
+<p><code class="highlighter-rouge">$ nslookup -type=ns naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nslookup <span class="nt">-type</span><span class="o">=</span>ns naver.com 
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+naver.com	nameserver <span class="o">=</span> ns2.naver.com.
+naver.com	nameserver <span class="o">=</span> ns1.naver.com.
+
+Authoritative answers can be found from:
+ns1.naver.com	internet address <span class="o">=</span> 125.209.248.6
+ns2.naver.com	internet address <span class="o">=</span> 125.209.249.6</code></pre></figure>
+
+<h5 id="3-mxmail-record-레코드-조회">3. MX(Mail Record) 레코드 조회</h5>
+
+<p><code class="highlighter-rouge">nslookup -query=mx naver.com</code></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">nslookup <span class="nt">-query</span><span class="o">=</span>mx naver.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+naver.com	mail exchanger <span class="o">=</span> 10 mx3.naver.com.
+naver.com	mail exchanger <span class="o">=</span> 10 mx1.naver.com.
+naver.com	mail exchanger <span class="o">=</span> 10 mx2.naver.com.
+
+Authoritative answers can be found from:
+naver.com	nameserver <span class="o">=</span> ns2.naver.com.
+naver.com	nameserver <span class="o">=</span> ns1.naver.com.
+mx1.naver.com	internet address <span class="o">=</span> 125.209.238.100
+mx3.naver.com	internet address <span class="o">=</span> 125.209.222.14
+ns1.naver.com	internet address <span class="o">=</span> 125.209.248.6
+ns2.naver.com	internet address <span class="o">=</span> 125.209.249.6</code></pre></figure>
+:ET

@@ -14,10 +14,8 @@ url: "https://kimbongjun.github.io" # The base hostname & protocol for your site
 github: "https://github.com/kimbongjun"
 comments: true
 markdown: kramdown
-kramdown:
-	input: GFM
-	syntax_hightlighter: rouge
 permalink: pretty
+highlighter: rouge
 paginate: 5
 
 sass:

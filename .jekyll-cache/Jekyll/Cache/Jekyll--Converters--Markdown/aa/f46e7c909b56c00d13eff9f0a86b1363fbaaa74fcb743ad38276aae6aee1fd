@@ -1,0 +1,43 @@
+I"�	<h4 id="aws-lightsail">AWS Lightsail</h4>
+
+<p><code class="highlighter-rouge">회사</code>에서 30여개가 넘는 브랜드 사이트의 호스팅을 <code class="highlighter-rouge">카페24</code>의 단독 웹호스팅으로 각각 관리하고 있었다.<br />
+호스팅 계정이 별개로 있다 보니 연장 관리, 용량, 트래픽 등을 따로 관리해줘야 하는 불편함을 감수해야 했다.</p>
+
+<p>회사의 비용절감, 편의성, 안정성 등을 고려했을 때 개선은 필연적이었고,
+개선 방향에는 <code class="highlighter-rouge">시놀로지 NAS</code>로 자체 서버 구축 또는 <code class="highlighter-rouge">클라우드 서버호스팅</code> 등이 있었지만 한심스럽게도 여러 해를 IT업에 종사했지만 SE쪽에 대한 지식이 전무하였기에
+NAS로 APM 구축 운영을 하기엔 무리가 있다는 판단을 하게 됐고 결국 클라우드 서버호스팅으로 갈피를 잡게 되었다.</p>
+
+<p>별안간 검색해보니 클라우드 호스팅중에서 <code class="highlighter-rouge">Amazon Web Services(AWS)</code>가 수요도 가장 많았고 참고할만한 자료도 방대한 까닭에 홀로 <code class="highlighter-rouge">SE</code> 업무까지 짊어져야 되는 본인에게 안성 맞춤이었다.<br />
+<a href="https://blog.lael.be/post/44" target="\_blank">※ 참고</a></p>
+
+<h3 id="--초기-비밀번호-확인">- 초기 비밀번호 확인</h3>
+
+<p>SSH 접속 후</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat bitnami_application_password
+</code></pre></div></div>
+
+<p>워드프레스 로그인 후 비밀번호 변경</p>
+
+<h3 id="--bitnami-뱃지-배너-제거">- Bitnami 뱃지 배너 제거</h3>
+
+<p>SSH 접속 후</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
+sudo /opt/bitnami/ctlscript.sh restart apache
+</code></pre></div></div>
+
+<h3 id="--업로드-용량-증설">- 업로드 용량 증설</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/opt/bitnami/php/etc/php.ini
+</code></pre></div></div>
+
+<p>해당 경로에서 업로드 관련 옵션 용량 수정 후
+(ex: upload_max_filesize = 64M)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /opt/bitnami/ctlscript.sh restart php-fpm
+sudo /opt/bitnami/ctlscript.sh restart apache
+</code></pre></div></div>
+
+<p>php-fpm 과 apache를 재시작한다.</p>
+:ET

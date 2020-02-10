@@ -1,0 +1,24 @@
+I"�<h4 id="준비물">준비물</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Windows - 명령 프롬프트
+2. Mac OS - terminal
+</code></pre></div></div>
+
+<h4 id="nslookup-기본-명령어">nslookup 기본 명령어</h4>
+
+<p><code class="highlighter-rouge">$ nslookup naver.com</code> - nslookup 도메인 주소</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>nslookup naver.com
+Server:		168.126.63.1
+Address:	168.126.63.1#53
+
+Non-authoritative answer:
+Name:	naver.com
+Address: 125.209.222.141
+Name:	naver.com
+Address: 210.89.164.90
+Name:	naver.com
+Address: 210.89.160.88
+Name:	naver.com
+Address: 125.209.222.142</code></pre></figure>
+
+:ET

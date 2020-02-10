@@ -1,0 +1,48 @@
+I"<h3 id="aws-lightsail-ftp-연결">AWS Lightsail FTP 연결</h3>
+
+<p>파일질라, Editplus, Visual Studio Code (※ 20년 2월 5일 추가)로 AWS FTP 접속하는 방법을 알아보겠다.<br />
+참고로 AWS Lightsail - Bitnami로 세팅했다.</p>
+
+<h4 id="--파일질라">- 파일질라</h4>
+
+<ol>
+  <li>아마존 계정에서 pem 파일을 다운로드 받는다. <a href="https://lightsail.aws.amazon.com/ls/webapp/account/keys" target="\_blank">https://lightsail.aws.amazon.com/ls/webapp/account/keys</a>
+<img src="/images/posts/aws-1.jpg" alt="pem 다운로드" title="pem다운로드" /></li>
+  <li>파일질라 - 사이트 관리자에서 <code class="highlighter-rouge">호스트</code> 입력 후 <code class="highlighter-rouge">로그온 유형</code>을 <code class="highlighter-rouge">키 파일</code>로 선택해준 후 키파일 위치를 pem 저장경로로 잡으면 연결 끝.
+<img src="/images/posts/aws-2.png" alt="filezilla" title="filezilla" /></li>
+</ol>
+
+<h4 id="--editplus">- Editplus</h4>
+
+<ol>
+  <li><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="\_blank">putty</a>를 다운받는다. (패키지로 받는다.)
+<img src="/images/posts/aws-1108-1.png" alt="putty" title="putty" /></li>
+  <li><code class="highlighter-rouge">PuTTY Key Generator</code> (Putty 패키지 다운로드를 받으면 포함되어 있다.) 에서 Load 버튼 클릭
+<img src="/images/posts/aws-1108-2.png" alt="putty" title="putty" /></li>
+  <li>아까 저장한 pem 파일 경로로 이동 후 pem파일을 load 한다.</li>
+  <li><code class="highlighter-rouge">Save Private key</code> 버튼 클릭</li>
+  <li>Are you sure ~ passparse to protect it ? 메시지를 가볍게 무시</li>
+  <li><code class="highlighter-rouge">ppk 파일</code>을 저장해준다.
+<img src="/images/posts/aws-1108-3.png" alt="putty" title="putty" /></li>
+  <li><code class="highlighter-rouge">Pageant</code>를 실행한다. (Putty 패키지 다운로드를 받으면 포함되어 있다.)</li>
+  <li>Add Key 버튼을 클릭 후 저장한 ppk파일를 열어 준 후 Close
+<img src="/images/posts/aws-1108-4.png" alt="putty" title="putty" /></li>
+  <li>에디트플러스를 실행시킨 뒤 <code class="highlighter-rouge">FTP 설정</code> 에서 FTP 서버, Username 을 입력 후 <code class="highlighter-rouge">고급 옵션</code> 을 클릭한다.</li>
+  <li>암호화 <code class="highlighter-rouge">sftp 설정</code> 후 <code class="highlighter-rouge">포트번호 22</code> <code class="highlighter-rouge">Pageant 사용</code>을 클릭해준 뒤 확인을 누르면 설정 끝.
+<img src="/images/posts/aws-1108-5.png" alt="putty" title="putty" /></li>
+</ol>
+
+<h4 id="--visual-studio-code-feat-ftp-kr-이용-시-">- Visual Studio Code (Feat. <a href="https://marketplace.visualstudio.com/items?itemName=ruakr.ftp-kr" target="\_blank">ftp-kr</a> 이용 시 )</h4>
+
+<ol>
+  <li>ftp-kr.json 파일에 다음과 같이 입력한다.</li>
+</ol>
+
+<p><img src="/images/posts/aws-privatekey.png" alt="ftp-kr.json" title="ftp-kr.json" /></p>
+
+<p><code class="highlighter-rouge">host</code> 는 사용하고 있는 라이트세일의 Public IP<br />
+<code class="highlighter-rouge">password</code> 는 ssh에서 <code class="highlighter-rouge">cat bitnami_application_password</code> 입력을 통해 얻은 비밀번호<br />
+<code class="highlighter-rouge">privateKey</code> 는 ppk파일이 위치한 로컬 경로</p>
+
+<p>이 정도 입력하면 vscode로 aws 라이트세일의 ftp 연결이 성공하며, 기호에 맞는 ftp-kr의 Command로 사용하면 되겠다.</p>
+:ET
