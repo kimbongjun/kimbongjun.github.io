@@ -3,16 +3,16 @@ layout: page
 title: Resume
 ---
 
-## Tech. Stack
+### Tech. Stack
 
-#### HTML5, CSS3, JavaScript, JQuery, Sass, PHP
+##### - HTML5, CSS3, JavaScript, JQuery, Sass, PHP
 
-#### Bootstrap3~4, WordPress
+##### - Bootstrap 3~4, WordPress
 
-#### Gulp, Webpack
+##### - Gulp, Webpack
 
-#### AWS - Lightsail, Cloudfront, S3, route53
+##### - AWS : Lightsail, Cloudfront, S3, route53
 
-#### Github, Slack, Trello
+##### - Github, Slack, Trello
 
 ---
