@@ -17,7 +17,7 @@ title: Resume
 
 ##### - Bootstrap 3~4, WordPress
 
-##### - Gulp, Webpack
+##### - Gulp, Webpack4,5
 
 ##### - AWS : Lightsail, Cloudfront, S3, route53
 
@@ -44,6 +44,11 @@ title: Resume
 - 시멘틱 마크업을 준수합니다.
 - Search Engine Optimization의 경험이 풍부합니다.
 - Sass 등 전처리기 사용을 선호합니다.
+
+##### - Framework
+
+- Bootstrap3,4의 차이점을 이해하고 있으며 능숙하게 구사합니다.
+- WordPress 테마 개발 및 커스텀에 능숙합니다.
 
 ##### - JavaScript
 
