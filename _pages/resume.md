@@ -3,6 +3,12 @@ layout: page
 title: Resume
 ---
 
+### Introduce
+
+#### 반갑습니다. 김봉준입니다.
+
+##### 7년차 웹퍼블리셔, 워드프레스 개발자입니다.
+
 ### Tech. Stack
 
 ##### - HTML5, CSS3, JavaScript, JQuery, Sass, PHP
@@ -17,7 +23,7 @@ title: Resume
 
 ---
 
-### SKill
+### Skill
 
 ##### - Overall
 
