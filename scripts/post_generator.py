@@ -11,7 +11,7 @@ def generate_post():
     
     # 2. 모델 설정 (models/ 를 생략하거나 포함하는 방식 중 가장 안정적인 형태)
     # 404 에러가 계속된다면 'gemini-1.5-flash-latest'로 적어보세요.
-    model_name = 'gemini-1.5-flash' 
+    model_name = 'models/gemini-2.5-flash' 
     
     try:
         model = genai.GenerativeModel(model_name)
