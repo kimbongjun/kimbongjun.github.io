@@ -27,7 +27,6 @@ def generate_post():
         date: {today}
         categories: AI-Tech
         ---
-        - 제목은 클릭하고 싶게 만드는 '블로그 스타일'로 지어줘
         - 한국어로 작성하고 가독성 좋게 마크다운 문법을 활용해줘.
         """
 
