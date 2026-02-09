@@ -23,10 +23,11 @@ def generate_post():
         - 아래 Front Matter를 포함할 것:
         ---
         layout: post
-        title: "Gemini AI Daily: {today}"
+        title: "[여기에 본문 내용과 어울리는 매력적인 제목을 지어서 넣어줘]"
         date: {today}
         categories: AI-Tech
         ---
+        - 제목은 클릭하고 싶게 만드는 '블로그 스타일'로 지어줘
         - 한국어로 작성하고 가독성 좋게 마크다운 문법을 활용해줘.
         """
 
