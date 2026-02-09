@@ -19,7 +19,7 @@ jobs:
           python-version: '3.9'
           
       - name: Install dependencies
-        run: pip install google-generativeai # openai 대신 설치
+        run: pip install -U google-generativeai
         
       - name: Run script
         env:
