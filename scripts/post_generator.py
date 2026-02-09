@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 # API 키 설정
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("API_KEY")
 
 def generate_post():
     response = openai.chat.completions.create(
