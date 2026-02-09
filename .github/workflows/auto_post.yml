@@ -19,11 +19,11 @@ jobs:
           python-version: '3.9'
           
       - name: Install dependencies
-        run: pip install openai
+        run: pip install google-generativeai # openai 대신 설치
         
       - name: Run script
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         # 👈 본인의 파일 경로와 이름으로 정확히 수정하세요!
         run: python scripts/post_generator.py 
         
