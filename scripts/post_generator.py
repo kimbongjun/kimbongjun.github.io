@@ -1,5 +1,6 @@
 import google.generativeai as genai
 import os
+import re
 from datetime import datetime
 
 # 1. API 키 설정
@@ -38,19 +39,33 @@ def generate_post():
             return
 
         content = response.text
-
-        # 4. 파일 저장
-        os.makedirs("_posts", exist_ok=True)
-        filename = f"_posts/{today}-gemini-post.md"
         
-        with open(filename, "w", encoding="utf-8") as f:
+        # 3. 제목(title) 추출 및 파일명 정제
+        # Front Matter 내의 title: "제목" 부분을 찾아냅니다.
+        title_match = re.search(r'title:\s*["\']?(.*?)["\']?\n', content)
+        
+        if title_match:
+            raw_title = title_match.group(1)
+            # 파일명으로 부적절한 특수문자 제거 및 공백을 대시(-)로 변경
+            clean_title = re.sub(r'[^\w\s-]', '', raw_title).strip()
+            clean_title = re.sub(r'\s+', '-', clean_title)
+            post_name = clean_title
+        else:
+            # 제목 추출 실패 시 기본값 설정
+            post_name = "ai-news-update"
+
+        # 4. 파일 저장 (날짜-제목.md 형식)
+        os.makedirs("_posts", exist_ok=True)
+        filename = f"{today}-{post_name}.md"
+        file_path = os.path.join("_posts", filename)
+        
+        with open(file_path, "w", encoding="utf-8") as f:
             f.write(content)
             
-        print(f"✅ 성공: {filename} 생성 완료")
+        print(f"✅ 성공: {file_path} 생성 완료")
 
     except Exception as e:
         print(f"❌ 오류 상세: {e}")
-        # 만약 404가 또 뜨면, 사용할 수 있는 모델 리스트를 출력해줍니다.
         print("사용 가능한 모델 목록을 확인해 보세요:")
         for m in genai.list_models():
             if 'generateContent' in m.supported_generation_methods:
