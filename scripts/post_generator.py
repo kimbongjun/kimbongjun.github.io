@@ -18,7 +18,7 @@ def generate_post():
         model = genai.GenerativeModel(model_name)
         
         prompt = f"""
-        주제: 최신 기술 및 AI 뉴스 요약
+        주제: Figma,Jenkins 등 UX 툴 동향과 노하우
         형식: GitHub Jekyll 블로그 마크다운 포스트
         요구사항:
         - 아래 Front Matter를 포함할 것:
